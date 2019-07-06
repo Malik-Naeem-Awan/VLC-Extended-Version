@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #3D4956;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.myMusicController">
+   <center>
+      <TableView fx:id="FTrackTable" prefHeight="511.0" prefWidth="1157.0" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="FTrackID" prefWidth="119.99996948242188" style="-fx-text-fill: white;" text="Track ID" />
+            <TableColumn fx:id="FMedia_Address" prefWidth="862.0" style="-fx-text-fill: white;" text="Track Locations" />
+            <TableColumn fx:id="PlayButtons" minWidth="0.0" prefWidth="199.0" text="interactive" />
+         </columns>
+      </TableView>
+   </center>
+   <top>
+      <AnchorPane prefHeight="49.0" prefWidth="1253.0" style="-fx-background-color: #3D4956;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 3em;" text="MY MUSIC" wrappingWidth="327.529296875" />
+            <JFXTextField fx:id="searchField" layoutX="551.0" layoutY="12.0" onAction="#searchAddress" promptText="TrackID" style="-fx-background-color: white;" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

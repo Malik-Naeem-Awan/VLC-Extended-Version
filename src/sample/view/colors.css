@@ -1,0 +1,62 @@
+.red {
+	-fx-background-color:#ff6058;
+}
+
+.white {
+	-fx-background-color:#ffffff;
+}
+
+.yellow {
+	-fx-background-color:#ffbd2e;
+}
+
+.green {
+	-fx-background-color:#28c940;
+}
+
+.dark_grey {
+	-fx-background-color:#7b809b;
+}
+
+.blue {
+	-fx-background-color: #6583fe;
+}
+
+.transparent {
+	-fx-background-color: transparent;
+}
+
+
+.fill-red {
+	-fx-fill:#ff6058;
+	-fx-text-fill:#ff6058;
+}
+
+.fill-yellow {
+	-fx-fill:#ffbd2e;
+	-fx-text-fill:#ffbd2e;
+}
+
+.fill-green {
+	-fx-fill:#28c940;
+	-fx-text-fill:#28c940;
+}
+
+.fill-dark_grey {
+	-fx-fill:#7b809b;
+	-fx-text-fill:#7b809b;
+}
+
+.fill-white {
+	-fx-fill:#ffffff;
+	-fx-text-fill:#ffffff;
+}
+
+
+.border-white {
+	-fx-border-color:white;
+}
+
+.border-dark {
+	-fx-border-color:#7b809b;
+}

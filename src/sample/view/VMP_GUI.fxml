@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="Vbox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="fill-white" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.Controller">
+   <children>
+      <HBox prefHeight="697.0" prefWidth="1350.0" stylesheets="@colors.css" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="666.0" prefWidth="169.0" style="-fx-background-color: white;" styleClass="fill-white">
+               <children>
+                  <ImageView fitHeight="273.0" fitWidth="269.0" pickOnBounds="true" preserveRatio="true" styleClass="vmp">
+                     <image>
+                        <Image url="@../images/VMPL.png" />
+                     </image>
+                  </ImageView>
+                  <Label styleClass="font-1p5" text="Discover" />
+                  <HBox onMouseClicked="#Music" style="-fx-background-color: white;">
+                     <children>
+                        <FontAwesomeIconView fill="#07a0c3" glyphName="MUSIC" glyphStyle="MUSIC" size="1.5em" styleClass="blue" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="My Music">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <styleClass>
+                        <String fx:value="padding-10" />
+                        <String fx:value="menu_item" />
+                     </styleClass>
+                  </HBox>
+                  <HBox onMouseClicked="#recentMedia" style="-fx-background-color: white;">
+                     <children>
+                        <FontAwesomeIconView fill="#07a0c3" glyphName="PLAY_CIRCLE" glyphStyle="MUSIC" size="1.5em" styleClass="blue" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Recent Media">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <styleClass>
+                        <String fx:value="padding-10" />
+                        <String fx:value="menu_item" />
+                     </styleClass>
+                  </HBox>
+                  <HBox onMouseClicked="#albums" style="-fx-background-color: white;">
+                     <children>
+                        <FontAwesomeIconView fill="#07a0c3" glyphName="SOUNDCLOUD" glyphStyle="TASKS" size="1.5em" styleClass="blue" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Albums">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <styleClass>
+                        <String fx:value="padding-10" />
+                        <String fx:value="menu_item" />
+                     </styleClass>
+                  </HBox>
+                  <HBox onMouseClicked="#artist" style="-fx-background-color: white;">
+                     <children>
+                        <FontAwesomeIconView fill="#07a0c3" glyphName="MALE" glyphStyle="MALE" size="1.5em" styleClass="blue" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Artists">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <styleClass>
+                        <String fx:value="padding-10" />
+                        <String fx:value="menu_item" />
+                     </styleClass>
+                  </HBox>
+                  <HBox onMouseClicked="#favouriteTracks" style="-fx-background-color: white;">
+                     <children>
+                        <FontAwesomeIconView fill="#07a0c3" glyphName="HEART" size="1.5em" styleClass="blue" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Favourites Hits">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <styleClass>
+                        <String fx:value="padding-10" />
+                        <String fx:value="menu_item" />
+                     </styleClass>
+                  </HBox>
+                  <HBox onMouseClicked="#playlist" style="-fx-background-color: white;">
+                     <children>
+                        <FontAwesomeIconView fill="#07a0c3" glyphName="LIST" glyphStyle="LIST" size="1.5em" styleClass="blue" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Playlist">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <styleClass>
+                        <String fx:value="padding-10" />
+                        <String fx:value="menu_item" />
+                     </styleClass>
+                  </HBox>
+                  <HBox prefHeight="161.0" prefWidth="178.0" />
+                  <HBox alignment="BOTTOM_CENTER" onMouseClicked="#createPlaylist" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: white;">
+                     <children>
+                        <FontAwesomeIconView fill="#07a0c3" glyphName="PLUS_CIRCLE" glyphStyle="PLUS_CIRCLE" size="1.5em" styleClass="blue" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Playlist">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <styleClass>
+                        <String fx:value="padding-10" />
+                        <String fx:value="menu_item" />
+                     </styleClass>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="697.0" prefWidth="1189.0" style="-fx-background-color: #3D4956;">
+               <children>
+                  <AnchorPane prefHeight="47.0" prefWidth="1177.0">
+                     <children>
+                        <StackPane layoutX="854.0" layoutY="7.0" styleClass="fill-white">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="BELL" rotate="48.0" size="2em" styleClass="fill-white" />
+                              <Label prefHeight="13.0" prefWidth="13.0" text="1">
+                                 <StackPane.margin>
+                                    <Insets left="20.0" top="7.0" />
+                                 </StackPane.margin>
+                                 <styleClass>
+                                    <String fx:value="red" />
+                                    <String fx:value="fill-white" />
+                                    <String fx:value="round" />
+                                    <String fx:value="align-center" />
+                                    <String fx:value="font-1p5" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </StackPane>
+                        <HBox alignment="CENTER_RIGHT" layoutX="922.0" layoutY="11.0" prefWidth="145.0" style="-fx-background-color: c7c7c791;" styleClass="border-round" />
+                        <Button layoutX="1067.0" layoutY="11.0" mnemonicParsing="false" onAction="#deleteTrack" style="-fx-background-color: #3D4956;" text="DELETE" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="menu_item1" />
+                              <String fx:value="border-round" />
+                              <String fx:value="border-dark" />
+                              <String fx:value="border-white" />
+                           </styleClass></Button>
+                        <JFXTextField fx:id="searchField" labelFloat="true" layoutX="897.0" layoutY="12.0" onAction="#searchTrack" styleClass="fill-white" unFocusColor="#979191" />
+                        <FontAwesomeIconView glyphName="SEARCH" glyphStyle="SEARCH" layoutX="1020.0" layoutY="28.0" onMouseClicked="#searchTrack">
+                           <styleClass>
+                              <String fx:value="fill-white" />
+                              <String fx:value="menu_item1" />
+                           </styleClass></FontAwesomeIconView>
+                        <Label layoutX="14.0" layoutY="41.0" prefHeight="39.0" prefWidth="196.0" style="-fx-font-family: san serif;" text="FEATURES ON">
+                           <styleClass>
+                              <String fx:value="fill-white" />
+                              <String fx:value="font-2" />
+                              <String fx:value="menu_item1" />
+                           </styleClass>
+                        </Label>
+                        <Button layoutX="91.0" layoutY="4.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#aboutWindow" prefHeight="28.0" prefWidth="100.0" text="About">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CHEVRON_CIRCLE_RIGHT" glyphStyle="CHEVRON_CIRCLE_RIGHT" nodeOrientation="RIGHT_TO_LEFT" styleClass="fill-white" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="transparent" />
+                              <String fx:value="fill-white" />
+                              <String fx:value="border-round" />
+                              <String fx:value="border-white" />
+                              <String fx:value="menu_item1" />
+                           </styleClass>
+                        </Button>
+                        <Button layoutX="14.0" layoutY="4.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#helpWindow" text="Help">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CHEVRON_CIRCLE_RIGHT" glyphStyle="CHEVRON_CIRCLE_RIGHT" nodeOrientation="RIGHT_TO_LEFT" styleClass="fill-white" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="transparent" />
+                              <String fx:value="border-round" />
+                              <String fx:value="border-white" />
+                              <String fx:value="fill-white" />
+                              <String fx:value="menu_item1" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <VBox style="-fx-background-color: white;">
+                     <children>
+                        <BorderPane fx:id="borderPane1" style="-fx-background-color: #3D4956;">
+                           <center>
+                              <AnchorPane prefHeight="58.0" prefWidth="1124.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button fx:id="playerButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#DisplayPlayer" prefHeight="39.0" prefWidth="287.0" text=" DIRECT ACCESS:  VIDEO-PLAYER">
+                                       <styleClass>
+                                          <String fx:value="transparent" />
+                                          <String fx:value="border-round" />
+                                          <String fx:value="border-white" />
+                                          <String fx:value="fill-white" />
+                                          <String fx:value="menu_item1" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="314.0" layoutY="14.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#getTracks" prefHeight="39.0" prefWidth="101.0" text="All Tracks">
+                                       <graphic>
+                                          <FontAwesomeIconView glyphName="CHEVRON_CIRCLE_RIGHT" glyphStyle="CHEVRON_CIRCLE_RIGHT" nodeOrientation="RIGHT_TO_LEFT" styleClass="fill-white" />
+                                       </graphic>
+                                       <styleClass>
+                                          <String fx:value="transparent" />
+                                          <String fx:value="border-round" />
+                                          <String fx:value="border-white" />
+                                          <String fx:value="fill-white" />
+                                          <String fx:value="menu_item1" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="426.0" layoutY="14.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#DatabaseInfo" prefHeight="39.0" prefWidth="122.0" text="Database Info">
+                                       <styleClass>
+                                          <String fx:value="transparent" />
+                                          <String fx:value="fill-white" />
+                                          <String fx:value="border-round" />
+                                          <String fx:value="border-white" />
+                                          <String fx:value="menu_item1" />
+                                       </styleClass>
+                                       <graphic>
+                                          <FontAwesomeIconView glyphName="CHEVRON_CIRCLE_RIGHT" glyphStyle="CHEVRON_CIRCLE_RIGHT" nodeOrientation="RIGHT_TO_LEFT" styleClass="fill-white" />
+                                       </graphic>
+                                    </Button>
+                                    <Button layoutX="560.0" layoutY="14.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#favourites" prefHeight="39.0" prefWidth="162.0" text="Favourites">
+                                       <styleClass>
+                                          <String fx:value="transparent" />
+                                          <String fx:value="fill-white" />
+                                          <String fx:value="border-round" />
+                                          <String fx:value="border-white" />
+                                          <String fx:value="menu_item1" />
+                                       </styleClass>
+                                    </Button>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="252.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/Icon.png" />
+                                       </image>
+                                    </ImageView>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="PLUS_CIRCLE" glyphStyle="PLUS_CIRCLE" layoutX="578.0" layoutY="39.0" onMouseClicked="#addtoFavourites" size="1.5em" styleClass="blue" />
+                                    <FontAwesomeIconView fill="WHITE" glyphName="MINUS_CIRCLE" glyphStyle="MINUS_CIRCLE" layoutX="689.0" layoutY="39.0" onMouseClicked="#delFavourite" size="1.5em" styleClass="blue" />
+                                 </children>
+                              </AnchorPane>
+                           </center></BorderPane>
+                     </children>
+                  </VBox>
+                  <VBox style="-fx-background-color: white;">
+                     <children>
+                        <BorderPane fx:id="borderPane" prefHeight="200.0">
+                           <top>
+                              <BorderPane prefHeight="564.0" prefWidth="1124.0" style="-fx-background-color: #3D4956;" BorderPane.alignment="CENTER">
+                                 <top>
+                                    <AnchorPane BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Text fill="WHITE" layoutX="-1.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 3em;" text="  VMP TRACKS" />
+                                          <MenuButton layoutX="1041.0" layoutY="9.0" mnemonicParsing="false" style="-fx-background-color: #3D4956;" text="SORT" textFill="WHITE">
+                                            <items>
+                                                <MenuItem mnemonicParsing="false" onAction="#Album" text="Album" />
+                                                <MenuItem mnemonicParsing="false" onAction="#Artist" text="Artist" />
+                                                <MenuItem mnemonicParsing="false" onAction="#date_added" text="Date_Added" />
+                                            </items>
+                                             <styleClass>
+                                                <String fx:value="transparent" />
+                                                <String fx:value="border-round" />
+                                                <String fx:value="border-white" />
+                                                <String fx:value="menu_item1" />
+                                             </styleClass>
+                                          </MenuButton>
+                                          <Button layoutX="955.0" layoutY="9.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#playAllTracks" prefWidth="70.0" text="Play all">
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="CHEVRON_CIRCLE_RIGHT" glyphStyle="CHEVRON_CIRCLE_RIGHT" nodeOrientation="RIGHT_TO_LEFT" styleClass="fill-white" />
+                                             </graphic>
+                                             <styleClass>
+                                                <String fx:value="transparent" />
+                                                <String fx:value="border-round" />
+                                                <String fx:value="border-white" />
+                                                <String fx:value="fill-white" />
+                                                <String fx:value="menu_item1" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </top>
+                                 <center>
+                                    <TableView fx:id="TrackTable" prefHeight="511.0" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+                                      <columns>
+                                          <TableColumn fx:id="TrackID" minWidth="63.0" prefWidth="-1.0" style="-fx-text-fill: white;" text="Track ID" />
+                                          <TableColumn fx:id="Track_Name" minWidth="258.0" prefWidth="-1.0" style="-fx-text-fill: white;" text="Track Name" />
+                                          <TableColumn fx:id="Album_Name" minWidth="207.0" prefWidth="-1.0" style="-fx-text-fill: white;" text="Album Name" />
+                                          <TableColumn fx:id="Artist_Name" minWidth="133.0" prefWidth="-1.0" style="-fx-text-fill: white;" text="Artist Name" />
+                                        <TableColumn fx:id="Media_Address" maxWidth="1.7976931348623157E308" minWidth="520.0" prefWidth="-1.0" style="-fx-text-fill: white;" text="Track Locations" />
+                                      </columns>
+                                    </TableView>
+                                 </center>
+                              </BorderPane>
+                           </top>
+                        </BorderPane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@constraints.css" />
+      <URL value="@colors.css" />
+      <URL value="@styles.css" />
+   </stylesheets>
+</VBox>

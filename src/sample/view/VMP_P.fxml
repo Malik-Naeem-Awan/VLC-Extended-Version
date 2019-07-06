@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#pauseV" prefHeight="567.0" prefWidth="694.0" stylesheets="@PlayerStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.PlayerController">
+   <center>
+      <StackPane prefHeight="415.0" prefWidth="694.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="startImage" mnemonicParsing="false" prefHeight="123.0" prefWidth="132.0" style="-fx-background-image: logo2;" />
+            <MediaView fx:id="mediaView" fitHeight="300.0" fitWidth="400.0" />
+         </children>
+      </StackPane>
+   </center>
+   <bottom>
+      <VBox alignment="CENTER" prefHeight="98.0" prefWidth="694.0" style="-fx-background-color: light grewhitey;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXSlider fx:id="seekslider">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </JFXSlider>
+            <HBox alignment="CENTER" prefWidth="644.0" style="-fx-background-color: white;">
+               <children>
+                  <Button fx:id="openFile" mnemonicParsing="false" onAction="#openFile" prefHeight="40.0" prefWidth="40.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#pauseVideo" prefHeight="40.0" prefWidth="46.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="playButton" mnemonicParsing="false" onAction="#playVideo" prefHeight="40.0" prefWidth="46.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="slowerVideo" mnemonicParsing="false" onAction="#slowerVideo" prefHeight="20.0" prefWidth="20.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="2.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="slowVideo" mnemonicParsing="false" onAction="#slowVideo" prefHeight="20.0" prefWidth="20.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="stopButton" mnemonicParsing="false" onAction="#stopVideo" prefHeight="40.0" prefWidth="49.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="fastVideo" mnemonicParsing="false" onAction="#fastVideo" prefHeight="20.0" prefWidth="20.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="2.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="fasterVideo" mnemonicParsing="false" onAction="#fasterVideo" prefHeight="20.0" prefWidth="20.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <JFXSlider fx:id="slider" />
+               </children>
+            </HBox>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor>
+      </VBox>
+   </bottom>
+   <top>
+      <BorderPane fx:id="top" prefHeight="44.0" prefWidth="694.0" BorderPane.alignment="CENTER">
+         <left>
+            <Button fx:id="title" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="38.0" prefWidth="35.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets top="8.0" />
+               </BorderPane.margin>
+            </Button>
+         </left>
+         <center>
+            <Label fx:id="VMP" prefHeight="32.0" prefWidth="58.0" style="-fx-background-color: transparent;" text="VMP" textFill="#00cc66" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </Label>
+         </center>
+         <right>
+            <Button fx:id="exitButton" alignment="TOP_RIGHT" contentDisplay="TOP" mnemonicParsing="false" onAction="#exit" onMouseClicked="#exit" prefHeight="35.0" prefWidth="36.0" style="-fx-background-color: transparent;" text="X" textFill="#00cc66" BorderPane.alignment="TOP_RIGHT">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </right>
+      </BorderPane>
+   </top>
+</BorderPane>

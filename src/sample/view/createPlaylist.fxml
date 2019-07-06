@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="99.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.createPlaylistController">
+   <top>
+      <AnchorPane prefHeight="99.0" prefWidth="686.0" style="-fx-background-color: #3D4956;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 3em;" text="CREATE NEW PLAYLIST" wrappingWidth="366.529296875" />
+            <Label layoutX="57.0" layoutY="70.0" text="Playlist Name :" textFill="WHITE" />
+            <JFXTextField fx:id="PlalistNameField" focusColor="#224fd7" layoutX="140.0" layoutY="66.0" styleClass="fill-white" unFocusColor="#867f7f" />
+            <Button layoutX="297.0" layoutY="65.0" mnemonicParsing="false" onAction="#createPlaylist" style="-fx-background-color: #3D4956;" text="Create">
+               <styleClass>
+                  <String fx:value="fill-white" />
+                  <String fx:value="border-round" />
+                  <String fx:value="menu_item1" />
+                  <String fx:value="border-round" />
+                  <String fx:value="border-white" />
+               </styleClass>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <stylesheets>
+      <URL value="@styles.css" />
+      <URL value="@constraints.css" />
+      <URL value="@colors.css" />
+   </stylesheets>
+</BorderPane>
