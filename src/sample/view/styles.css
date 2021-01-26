@@ -1,0 +1,113 @@
+
+.logo{
+	-fx-background-image: url('../images/logo.png');
+	-fx-size: 500 500;
+}
+
+.logo1{
+	-fx-background-image: url('../images/icon.jpg');
+	-fx-size: 500 500;
+}
+
+.img {
+-fx-background-image: url('../images/alien.jpg');
+-fx-background-position: left;
+}
+
+.vmp {
+-fx-background-image: url('../images/VMPL.png');
+-fx-background-position: left;
+}
+
+.user {
+-fx-background-image: url('../images/1157be63ea2e533.jpg');
+-fx-background-position: left;
+}
+
+.avatar {
+-fx-background-image: url('../images/headphones.jpg');
+-fx-background-position: center;
+    -fx-background-size: cover;
+}
+
+Button, Text, Label {
+-fx-font-family: "Yu Gothic UI Semilight";
+}
+
+.slider > .track {
+	-fx-background-color:#07a0c3;
+	-fx-background-insets:1;
+}
+
+.slider > . thumb {
+	-fx-background-color:#07a0c3;
+	-fx-background-insets:1;
+}
+
+.active {
+	-fx-background-color:#ffffff;
+	-fx-border-width:0 0 0 4px;
+	-fx-border-color: #07a0c3;
+}
+
+.menu_item:hover {
+	-fx-background-color:#ffffff;
+	-fx-border-width:0 0 0 4px;
+	-fx-border-color: #07a0c3;
+	-fx-cursor:hand;
+	-fx-fill:white;
+	-fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+
+.menu_item1:hover {
+	-fx-border-color: #07a0c3;
+	-fx-cursor:hand;
+	-fx-fill: #07a0c3;
+	-fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.menu_item:hover FontAwesomeIcon, .menu_item:hover Text {
+	-fx-fill: #07a0c3;
+}
+
+
+
+
+ .table-view:focused{
+	-fx-background-color: transparent;
+	-fx-table-cell-border-color: transparent;
+	-fx-table-header-border-color: transparent;
+
+ }
+
+.table-row-cell:odd {
+	-fx-background-color:  #3D4956;
+	-fx-background-insets:0, 0 0 1 0 ;
+	-fx-padding: 0.0em ;
+	-fx-cursor: hand;
+}
+
+.table-row-cell:even{
+	-fx-background-color:  #3D4956;
+	-fx-background-insets:0, 0 0 1 0 ;
+	-fx-padding: 0.0em ;
+	-fx-cursor: hand;
+}
+
+/*.table-view {
+	-fx-base: #1d1d1d;
+	-fx-control-inner-background: #1d1d1d;
+	-fx-background-color: #1d1d1d;
+
+	-fx-padding: 5;
+}
+ */
+
+.table-view .column-header-background {
+	-fx-background-color: transparent;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+	-fx-background-color: -fx-focus-color;
+}

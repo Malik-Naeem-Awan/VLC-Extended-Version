@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #3D4956;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.favouriteTracksController">
+   <center>
+      <TableView fx:id="FTrackTable" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="FTrackID" prefWidth="119.99996948242188" style="-fx-text-fill: white;" text="Favourite Track ID" />
+            <TableColumn fx:id="FMedia_Address" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="574.0" style="-fx-text-fill: white;" text="Track Name" />
+         </columns>
+      </TableView>
+   </center>
+   <top>
+      <AnchorPane prefHeight="98.0" prefWidth="702.0" style="-fx-background-color: #3D4956;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 3em;" text="Favourite Tracks" wrappingWidth="327.529296875" />
+            <TextField fx:id="searchfield" layoutX="461.0" layoutY="37.0" onAction="#PlayID" promptText="Play trackID" />
+         </children>
+      </AnchorPane>
+   </top>
+   <stylesheets>
+      <URL value="@styles.css" />
+      <URL value="@constraints.css" />
+      <URL value="@colors.css" />
+   </stylesheets>
+</BorderPane>

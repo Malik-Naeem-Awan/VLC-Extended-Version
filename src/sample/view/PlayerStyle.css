@@ -1,0 +1,93 @@
+
+
+#exitButton:hover{
+    -fx-cursor: hand;
+}
+#title{
+
+    -fx-background-image: url("../Playerimages/logo3.png");
+    -fx-background-size: 50 60;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center ;
+    -fx-background-color: transparent;
+
+}
+
+#VMP{
+    -fx-background-color: white;
+    -fx-font-size: 20;
+}
+
+#openFile{
+    -fx-background-image: url("../Playerimages/folder.jpg");
+    -fx-background-size: 35 35;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center ;
+    -fx-background-color: transparent;
+}
+
+#slowVideo{
+    -fx-background-image: url("../Playerimages/slow.jpg");
+    -fx-background-size: 20 20;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center ;
+    -fx-background-color: transparent;
+
+}
+
+#slowerVideo{
+    -fx-background-image: url("../Playerimages/slower.jpg");
+    -fx-background-size: 20 20;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center ;
+    -fx-background-color: transparent;
+
+}
+
+#fastVideo{
+    -fx-background-image: url("../Playerimages/fast.jpg");
+    -fx-background-size: 20 20;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center ;
+    -fx-background-color: transparent;
+
+}
+
+#fasterVideo{
+    -fx-background-image: url("../Playerimages/faster.jpg");
+    -fx-background-size: 20 20;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center ;
+    -fx-background-color: transparent;
+}
+
+#playButton{
+    -fx-background-image: url("../Playerimages/play.jpg");
+    -fx-background-size: 40 40;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center ;
+    -fx-background-color: transparent;
+}
+
+#pauseButton{
+    -fx-background-image: url("../Playerimages/pause.jpg");
+    -fx-background-size: 40 40;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center ;
+    -fx-background-color: transparent;
+}
+
+#stopButton{
+    -fx-background-image: url("../Playerimages/stop.jpg");
+    -fx-background-size: 40 40;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center ;
+    -fx-background-color: transparent;
+}
+#startImage{
+    -fx-background-image: url("../Playerimages/logo2.png");
+    -fx-background-size: 200 200;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center ;
+    -fx-background-color: transparent;
+}

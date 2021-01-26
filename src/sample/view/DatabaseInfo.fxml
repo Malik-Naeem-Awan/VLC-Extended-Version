@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="430.0" style="-fx-background-color: #3D4956;">
+               <children>
+                  <Text fill="WHITE" layoutX="16.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATABASE CONSTRAINTS">
+                     <font>
+                        <Font name="Calibri Bold" size="35.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="16.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; The Artists can have one or many Albums Assiciated with him.">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; The Album can have only one Artist and not two.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; The Track could be present in only one Album not in Multiple" wrappingWidth="403.4433543625055">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="15.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; The Artists can have many albums and many Tracks Produced.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="99.0" fitWidth="531.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/oracle1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
